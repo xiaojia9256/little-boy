@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>涛哥视频集（01）</title>
+</head>
+<body>
+
+  <div style="text-align:center;">
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="Big()">大</button>
+  <button onclick="Normal()">中</button>
+  <button onclick="Small()">小</button>
+  <br /> 
+  <video id="video1" width="420" style="margin-top:15px;">
+    <source src="myf.ogg" type="video/ogg">
+    <source src="myf.mp4" type="video/mp4">
+  </video>
+<script type="text/javascript">
+var myVideo=document.getElementById("video1");
+
+function playPause()
+{ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function Big()
+{ 
+myVideo.width=520; 
+} 
+function Normal()
+{ 
+myVideo.width=420; 
+} 
+function Small()
+{ 
+myVideo.width=320; 
+} 
+
+
+</script> 
+</body>
+</html>
+
+
